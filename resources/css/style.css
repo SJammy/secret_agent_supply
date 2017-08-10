@@ -19,7 +19,7 @@ p {
 }
 
 .site_container{
-/*	width:  960px;*/
+	width:  960px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -64,17 +64,27 @@ header img {
 	font-size: 2rem;
 }
 
-.nav_main {
+#nav_main {
 	background-color: firebrick;
 	padding-top: 0.75rem;
 	padding-bottom: 0.75rem;
 }
 
-
+#nav_main_small {
+	background-color: firebrick;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+    display: none;
+}
 
 nav ul {
 	display: flex;
 	justify-content: space-between;
+}
+
+#nav_main_small ul {
+	display: flex;
+	justify-content: space-around;
 }
 
 
@@ -135,6 +145,40 @@ footer {
 	display: flex;
 	align-items: center;
 }
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1024px) {
+
+    .site_container {
+        width: 100%;
+    }
+    
+    #nav_main {
+        display: none;
+    }
+    
+    #nav_main_small {
+        display: block;
+    }
+    
+    .product_grid {
+        overflow: hidden;
+    }
+    
+    .product {
+        width: 47%;
+        border: 4px solid black;
+        overflow: hidden;
+    }
+    
+    #glasses {
+        display: none;
+    }
+}
+
+
+
 
 
 
