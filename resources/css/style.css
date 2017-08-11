@@ -177,6 +177,69 @@ footer {
     }
 }
 
+@media only screen and (max-width: 470px) {
+    #hello_470 p {
+        width: 470px;
+        border: 1px solid blue;
+        color: white;
+    }
+    
+    .main_banner {
+        height: 15rem;
+    }
+    .banner_box {
+        width: 100%;
+        padding: 1rem 2rem;
+        position: relative;
+        top: 10rem;
+    }
+    
+    .banner_box h1 {
+        font-weight: bold;
+        font-size: 0.77rem;
+	
+    }
+    
+    .banner_box h2 {
+	   font-weight: bold;
+	   font-size: 1rem;
+    }
+    
+    .product {
+        width: 90%;
+        border: 4px solid black;
+        overflow: hidden;
+        margin: auto;
+    }
+    
+    #watch {
+        display: none;
+    }
+    
+    .store_info {
+        flex-wrap: wrap;
+        
+    }
+    
+    .location_hours {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 0.5rem;
+    }
+    
+    #copyright {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
+
+
 
 
 
